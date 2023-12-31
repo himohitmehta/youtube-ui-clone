@@ -170,9 +170,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 								disablePadding
 								sx={{
 									display: "block",
-									borderBottom:
-										item.hasDivider &&
-										"1px solid rgba(0,0,0,0.12)",
+									borderBottom: item.hasDivider
+										? "1px solid rgba(0,0,0,0.12)"
+										: "none",
 								}}
 							>
 								<ListItemButton
